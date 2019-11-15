@@ -22,7 +22,35 @@
           }
         },
         "parameters": [],
-        "description": ""
+        "description": "give back a car",
+        "requestBody": {}
+      }
+    },
+    "/cars": {
+      "get": {
+        "summary": "return all cars",
+        "tags": [
+          "get"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "model": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
