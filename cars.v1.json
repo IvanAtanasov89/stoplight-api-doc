@@ -10,19 +10,8 @@
     }
   ],
   "paths": {
-    "/car/{id}": {
-      "parameters": [
-        {
-          "type": "string",
-          "name": "id",
-          "in": "path",
-          "description": "the id of the car",
-          "schema": {
-            "type": "string"
-          },
-          "required": true
-        }
-      ],
+    "/car": {
+      "parameters": [],
       "get": {
         "summary": "get car",
         "tags": [],
