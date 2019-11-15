@@ -16,13 +16,23 @@
           "type": "string",
           "name": "id",
           "in": "path",
+          "description": "the id of the car",
+          "schema": {
+            "type": "string"
+          },
           "required": true
         }
       ],
       "get": {
         "summary": "get car",
         "tags": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [],
+        "description": ""
       }
     }
   }
