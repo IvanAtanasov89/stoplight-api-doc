@@ -3,7 +3,10 @@
   "info": {
     "title": "Cars",
     "version": "1.0",
-    "description": "Returns data about cars"
+    "description": "Returns data about cars",
+    "contact": {
+      "name": "Ivan"
+    }
   },
   "servers": [
     {
@@ -11,21 +14,6 @@
     }
   ],
   "paths": {
-    "/car": {
-      "parameters": [],
-      "get": {
-        "summary": "get car",
-        "tags": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        },
-        "parameters": [],
-        "description": "give back a car",
-        "requestBody": {}
-      }
-    },
     "/cars": {
       "get": {
         "summary": "return all cars",
@@ -47,10 +35,19 @@
                     "type": "string"
                   }
                 }
+              },
+              "examples": {
+                "example-1": {
+                  "value": {
+                    "model": "Defender"
+                  }
+                }
               }
             }
           }
-        }
+        },
+        "description": "get all the cars",
+        "operationId": "getCars"
       }
     }
   }
